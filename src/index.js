@@ -1,11 +1,5 @@
 import React from 'react';
 import reactDOM from 'react-dom';
-import './styles/styles.scss';
-
-const App = () => {
-    return (
-        <h1 className="red">headerdd</h1>
-    )
-}
-
+import App from './components/App';
+  
 reactDOM.render(<App />, document.getElementById('root'));
