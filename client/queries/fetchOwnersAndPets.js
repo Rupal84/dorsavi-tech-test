@@ -1,8 +1,8 @@
 import gql from 'graphql-tag';
 
 export default gql`
-  query getOwners{
-    owners {
+  query getPetOwners($petName: String, $city: String, $petType: String) {
+    owners (petName: $petName, city: $city, petType: $petType){
       name,
       gender,
       pets {

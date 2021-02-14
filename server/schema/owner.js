@@ -12,6 +12,7 @@ const Owner = new GraphQLObjectType({
     name: { type: GraphQLString },
     gender: { type: GraphQLString },
     age: { type: GraphQLInt },
+    city: {type: GraphQLString},
     pets: {
       type: new GraphQLList(require('./pet_type'))
     }
