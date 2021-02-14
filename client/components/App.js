@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/styles.scss';
 import {URLS} from '../utils/AppConstants';
-import {get} from '../utils/request'
+import {get} from '../utils/request';
+import PetList from './PetList';
 const App = () => {
     const fetchPetsMel = () => {
         return get(URLS.MELBOURNE);
@@ -45,6 +46,7 @@ const App = () => {
                 </div> 
                 <button className="submit" type="button" onClick={handleSubmit}>Go!</button>
         </form>
+        <PetList />
         </div>
     )
 }
