@@ -8,7 +8,8 @@ export default gql`
       pets {
         name,
         type
-      }
+      },
+      city
     }
   }
 `;
